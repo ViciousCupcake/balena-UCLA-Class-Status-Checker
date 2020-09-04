@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This program checks the UCLA Registrar for updates in user-specified classes.
+This program runs on docker through balenaOS and checks the UCLA Registrar for updates in user-specified classes.
 
 ## Installation & Usage Guide
 
