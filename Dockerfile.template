@@ -1,0 +1,11 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-openjdk:11-jdk
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN javac ClassChecker.java
+
+ENV INITSYSTEM=on
+
+CMD ["java", "-cp", ".", "ClassChecker"]
